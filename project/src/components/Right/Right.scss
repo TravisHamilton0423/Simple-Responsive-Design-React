@@ -1,0 +1,184 @@
+@import "../Common/_variables.scss";
+
+.right-app {
+  background-image: url($imageUrl + '/cardo_back.png');
+  z-index: -1;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  //height: 918px;
+}
+
+.cardo-card {
+  position: absolute;
+  left: 14.15%;
+  top: 35.08%;
+  border-radius: 30px 0px;
+  max-width: 435px;
+  width: 70%;
+  height: 252px;
+  padding: 0px 45px 0px 45px;
+  box-sizing: border-box;
+
+  .card-rect  {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px 0px;
+    z-index: -1;
+  }
+
+  .rotated {
+    display: none;
+    transform: rotate(5.02deg);
+  }
+
+  .cardo-header {
+    .card-gradient  {
+      background: -webkit-linear-gradient(180deg, #F2DCE2 0%, #A5AFD4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card-star  {
+      font-size: 24px;
+    }
+    .card-second-star {
+      margin-left: -13px;
+      margin-right: 10px;
+      z-index: 0;
+    }
+    span {
+      font-size: 25px;
+    }
+    .mr5  {
+      margin-right: 25px;
+    }
+  }
+
+  .electric-card {
+    background-image: url($imageUrl + '/desktop-card.png');
+    background-size: 49px 35px;
+    width: 49px;
+    height: 35px;
+  }
+
+  .card-footer  {
+    font-family: 'Plus Jakarta Sans';
+    font-size: 16px;
+    line-height: 17.44px;
+    letter-spacing: 5px;
+    .card-title {
+      font-weight: 600;
+    }
+    .card-content {
+      font-weight: 400;
+    }
+    img {
+      width: 15px;
+      height: 52px;
+    }
+  }
+}
+
+.stars  {
+  position: absolute;
+  width: 76px;
+  height: 76px;
+  left: 17.77%;
+  top: 21.02%;
+}
+
+.hand-image {
+  position: absolute;
+  background-image: url($imageUrl + '/hand.png');
+  background-repeat: no-repeat;
+  left: -99.06%;
+  bottom: -19.61%;
+  width: 1920px;
+  height: 1002px;
+  z-index: -2;
+}
+
+.lines-image  {
+  background-image: url($imageUrl + '/lines.png');
+  position: absolute;
+  opacity: 0.3;
+  width: 100%;
+  height: 618px;
+  background-size: 100% 100%;
+  bottom: -10px;
+}
+
+@media screen and (max-width: 480px) {
+    .cardo_card {
+        
+        box-sizing: border-box;
+        padding: 46px 20px 50px 20px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+  .right-app  {
+    background-image: none;
+    position: relative;
+    max-width: 350px;
+    width: 350px;
+    height: 223px;
+    margin-bottom: 50px;
+    .electric-card {
+      background-image: url($imageUrl + '/mobile-card.png');
+      background-size: 38px 27px;
+      width: 38px;
+      height: 27px;
+    }
+    .lines-image  {
+      background-image: none;
+      display: none;
+    }
+    .hand-image {
+      background-image: none;
+      display: none;
+    }
+    .stars {
+      display: none;
+    }
+    .card-rect  {
+      width: 335px;
+      height: 200px;
+      background-image: url($imageUrl + '/cardo_back.png');
+      background-size: 753px 1058px;
+      background-position: -155px 307px;
+    }
+    .rotated  {
+      display: block;
+      background-image: none;
+      background-color: #EBEDFF;
+    }
+    .cardo-card {
+      width: 100%;
+      height: 200px;
+      left: 7px;
+      top: 12px;
+      position: relative;
+      .card-gradient  {
+        background: black;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 720px) {
+  .right-app  {
+    position: relative;
+    height: 918px;
+    .hand-image {
+      left: -60.06%;
+      bottom: -19.61%;
+    }
+  }
+}

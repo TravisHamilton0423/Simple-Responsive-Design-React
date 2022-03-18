@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../../font/Helvetica\ Neue\ Medium\ Extended.otf');
+}
+
+.footer-app {
+  background-color: #1D1D1C;
+  color: #fff;
+  padding: 112px 67px 112px 100px;
+  span {
+    font-size: 65px;
+    font-family: 'Cormorant Garamond';
+    font-weight: 500;
+  }
+}
+
+.card-app {
+  margin: 40px 33px 0px 0px;
+  padding: 36px;
+  background-color: #181818;
+  min-width: 139px;
+  span {
+    font-size: 36px;
+    word-wrap: break-word;
+  }
+  p {
+    word-wrap: break-word;
+    font: 400 16px 'Open Sans';
+    opacity: 0.6;
+    margin: 0px;
+    padding: 18px 0px;
+  }
+  .card-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    width: 139px;
+    height: 33px;
+    border-radius: 100px;
+    background-color: #A5AFD4;
+    font-family: 'Helvetica Neue';
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-app {
+    padding: 60px 27px 60px 27px;
+    span {
+      font-size: 48px;
+    }
+  }
+
+  .card-app {
+    margin: 43px 0px 0px 0px;
+  }
+}

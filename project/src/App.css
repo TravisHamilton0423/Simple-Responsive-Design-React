@@ -1,0 +1,13 @@
+.top {
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+}
+
+@media screen and (max-width: 720px) {
+  .desktop-mobile {
+   align-items: center; 
+   justify-content: center;
+  }
+  
+}
